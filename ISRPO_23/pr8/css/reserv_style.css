@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+@font-face{
+    font-family: 'Inter';
+    src: url("../fonts/Inter_24pt-Regular.ttf");
+}
+
+
+body{
+    color: white;
+    background-color:#201e1e;
+}
+section {
+    height: 100vh;
+}
+.reservation_section{
+    background-image: url('../img/form_back.png');
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.plashka{
+    width: 50%;
+    background-color:#0e0e0e;
+    padding: 20px 5% 2.5% 5%;
+    
+}
+.reservation_section fieldset{
+    border-radius: 10px;
+    border-left: none;
+    padding:  5% 10% 5% 0;
+    position: relative;
+}
+.reservation_section fieldset legend{
+    font-size: 36px;
+    padding: 0 10px;
+}
+form{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 3fr;
+    gap: 20px;
+    width: 90%;
+    padding-bottom: 10px;
+}
+#tel{
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#wishes{
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+#guests{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+input, textarea{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    border: 0px;
+}
+input::placeholder{
+    color: white;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    
+    filter: invert(1);
+}
+.armor {
+    position: absolute;
+    right: -124px;
+}
+.armor img{
+    position: relative;
+}
+#helmet{
+    position: absolute;
+    right: -60px;
+    bottom: 0;
+}
+legend a{
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+}
+.btn_cta{
+    background-color: white;
+    color: #e73abb;
+    border-radius: 10px;
+    padding: 10px 70px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: bold;
+    font-size: 24px;
+}
+.btn_cta:hover{
+    background-color:  #e73abb;;
+    color: white;
+}

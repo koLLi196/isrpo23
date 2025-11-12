@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+@font-face{
+    font-family: 'Inter';
+    src: url("../fonts/Inter_24pt-Regular.ttf");
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #0e0e0e;
+    color: white;
+    background-image: url("../img/shape_back_one.png"), url("../img/shape_back_two.png");
+    background-repeat: no-repeat;
+    background-size: cover, 70%;
+    background-position: 0% center, 100% center;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    height: 100vh;
+}
+.left_main{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 50px;
+    width: 40%;
+    margin-left: 10%;
+}
+.left_title{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.left_title h1{
+    font-size: 90px;
+    font-weight: bold;
+    font-style: italic;
+}
+.left_title p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.left_main>p{
+    font-size: 28px;
+    width: 100%;
+}
+.btn_cta{
+    background-color: white;
+    color: #e73abb;
+    border-radius: 10px;
+    padding: 10px 70px;
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: bold;
+    font-size: 24px;
+}
+.btn_cta:hover{
+    background-color:  #e73abb;;
+    color: white;
+}
+.right_main{
+    display: flex;
+    flex-direction: column;
+    height: 99%;
+}
+.right_item{
+    position: relative;
+    height: 50%;
+}
+.right_item img{
+    height: 100%;
+}
+.right_item p{
+    font-size: 40px;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.right_item span{
+    font-size: 60px;
+    font-weight: bold;
+}
+.btn_stroke{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 50px;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.purple_btn:hover{
+    background-color: #0e0e0e;
+    border: 2px solid #e73abb;
+    color: #e73abb;
+}
+.blue_btn:hover{
+    background-color: #0e0e0e;
+    border: 2px solid #0085ff;
+    color: #0085ff;
+}
+
